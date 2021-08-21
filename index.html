@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!-- Utilizei o bootstrap pois o foco era mostrar mais a lógica na linguagem javascript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator - 1.0</title>
+</head>
+<body>
+    <div class="row row-cols-3">
+        <div class="container-fluid">            
+           <div class="row row-cols-1">
+            <div class="col"><h1>Calculator</h1></div>  
+            </div>
+            <div class="row row-cols-6">
+                <div id="campo1"></div>
+                <div id="campo2"></div>
+                <div id="campo3"></div> = <div id="campo4"></div>
+            </div>
+            <div class="row row-cols-4">
+                <div class="col">
+                    <button onclick="addNum(7)" type="button" class="btn btn-secondary">7</button>
+                </div>
+                <div class="col">
+                    <button onclick="addNum(8)" type="button" class="btn btn-secondary">8</button>
+                </div>
+                <div class="col">
+                    <button onclick="addNum(9)" type="button" class="btn btn-secondary">9</button>
+                </div>
+                <div class="col">
+                    <button onclick="addOper('/')" type="button" class="btn btn-light">/</button>
+                </div>
+                <div class="col">
+                    <button onclick="addNum(4)" type="button" class="btn btn-secondary">4</button>
+                </div>
+                <div class="col">
+                    <button onclick="addNum(5)" type="button" class="btn btn-secondary">5</button>
+                </div>
+                <div class="col">
+                    <button onclick="addNum(6)" type="button" class="btn btn-secondary">6</button>
+                </div>
+                <div class="col">
+                    <button onclick="addOper('-')" type="button" class="btn btn-light">-</button>
+                </div>
+                <div class="col">
+                    <button onclick="addNum(1)" type="button" class="btn btn-secondary">1</button>
+                </div>
+                <div class="col">
+                    <button onclick="addNum(2)" type="button" class="btn btn-secondary">2</button>
+                </div>
+                <div class="col">
+                    <button onclick="addNum(3)" type="button" class="btn btn-secondary">3</button>
+                </div>
+                <div class="col">
+                    <button onclick="addOper('*')" type="button" class="btn btn-light">*</button>             
+                </div>
+            </div>
+            <div class="row row-cols-4">
+                <div class="col">
+                    <button onclick="addNum(0)" type="button" class="btn btn-secondary">0</button>
+                </div>
+                <div class="col">
+                    <button onclick="calc()" type="button" class="btn btn-success">=</button>
+                </div>
+                <div class="col">
+                    <button onclick="rzt()" type="button" class="btn btn-danger">Rzt</button>
+                </div>         
+                <div class="col">
+                    <button onclick="addOper('+')" type="button" class="btn btn-light">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
